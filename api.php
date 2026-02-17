@@ -15,7 +15,7 @@ if (session_status() === PHP_SESSION_NONE) {
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname ="tapu_backup";
+$dbname ="tapu_miniharita_v2";
 
 // MySQL bağlantısı oluşturma
 try {

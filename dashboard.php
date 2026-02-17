@@ -1,11 +1,14 @@
 <?php
 session_start();
 
-// Eğer kullanıcı giriş yapmamışsa login sayfasına yönlendir
-if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
-    header("Location: login.php");
-    exit();
-}
+// TODO: Login kontrolü - DB bağlandığında aktif et
+// if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+//     header("Location: login.php");
+//     exit();
+// }
+$_SESSION['loggedin'] = true;
+$_SESSION['username'] = 'test';
+$_SESSION['user_role'] = 'prolegal';
 
 
 // Oturumda username anahtarı var mı kontrol et

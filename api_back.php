@@ -8,7 +8,7 @@ ob_start("ob_gzhandler");
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "tapu_backup";
+$dbname = "tapu_miniharita_v2";
 
 // MySQL bağlantısı oluşturma
 $conn = new mysqli($servername, $username, $password, $dbname);

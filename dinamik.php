@@ -12,7 +12,7 @@ ini_set('display_errors', 1);
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "tapu_backup";
+$dbname = "tapu_miniharita_v2";
 
 try {
     $conn = new mysqli($servername, $username, $password, $dbname);

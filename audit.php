@@ -12,7 +12,7 @@ function get_audit_db_connection()
     $servername = "localhost";
     $username   = "root";
     $password   = "";
-    $dbname     = "tapu_backup";
+    $dbname     = "tapu_miniharita_v2";
 
     mysqli_report(MYSQLI_REPORT_OFF);
 
