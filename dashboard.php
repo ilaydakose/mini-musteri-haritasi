@@ -2331,11 +2331,9 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : 'Bilinmeyen k
             // ==================== DARK MODE FUNCTIONALITY ====================
             const prolegalLogo = document.getElementById('prolegalLogo');
 
-            // Kaydedilmiş dark mode tercihini kontrol et
-            const savedDarkMode = localStorage.getItem('darkMode') === 'true';
-            if (savedDarkMode) {
-                document.body.classList.add('dark-mode');
-            }
+            // Dark mode varsayılan olarak kapalı
+            document.body.classList.remove('dark-mode');
+            localStorage.setItem('darkMode', false);
 
             if (prolegalLogo) {
                 prolegalLogo.addEventListener('click', function (e) {
