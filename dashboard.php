@@ -18,7 +18,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : 'Bilinmeyen k
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Parsel sorgu</title>
-    <link rel="icon" href="/prolegal-svg.png" type="image/png">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗺</text></svg>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta http-equiv="Content-Security-Policy" content="img-src * data:;">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
@@ -631,8 +631,8 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : 'Bilinmeyen k
                     </div>
                     <div class="header-label-container">
                         <h6 class="app-label mb-0" id="sub-title-h6-short">
-                            <img src="prolegal-logo.svg" id="prolegalLogo" style="cursor: pointer;"
-                                title="Dark Mode Toggle">
+                            <span id="prolegalLogo" style="cursor: pointer; font-weight: 700; font-size: 16px;"
+                                title="Dark Mode Toggle">Mini Harita</span>
                         </h6>
                     </div>
                 </div>
