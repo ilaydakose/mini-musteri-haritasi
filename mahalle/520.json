@@ -1,0 +1,85 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "text": "Güngören",
+        "id": 27965
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "text": "Güven",
+        "id": 27111
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "text": "Osmaniye",
+        "id": 144433
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              28.88352,
+              41.02044
+            ],
+            [
+              28.88399,
+              41.0214
+            ],
+            [
+              28.88549,
+              41.02267
+            ],
+            [
+              28.88572,
+              41.02234
+            ],
+            [
+              28.88569,
+              41.02191
+            ],
+            [
+              28.88735,
+              41.02051
+            ],
+            [
+              28.88719,
+              41.01977
+            ],
+            [
+              28.88684,
+              41.01958
+            ],
+            [
+              28.88352,
+              41.02044
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "text": "Sanayi",
+        "id": 149138
+      }
+    }
+  ],
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+        <name>Property HAM TOPRAK</name>
+        <Placemark>
+            <name>HAM TOPRAK</name>
+            <description>Property ID: 49011708</description>
+            <Style>
+                <LineStyle>
+                    <color>ff0000ff</color>
+                    <width>2</width>
+                </LineStyle>
+                <PolyStyle>
+                    <color>7d00ffff</color>
+                </PolyStyle>
+            </Style>
+            <Polygon><outerBoundaryIs><LinearRing><coordinates>29.4515,40.84283,0 29.45128,40.84256,0 29.45175,40.84221,0 29.45246,40.84196,0 29.45282,40.8424,0 29.45191,40.8431,0 29.4515,40.84283,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+        </Placemark>
+        <Placemark>
+            <name>Property Center</name>
+            <description>Property center point</description>
+            <Style>
+                <IconStyle>
+                    <color>ff00ff00</color>
+                    <scale>1.2</scale>
+                </IconStyle>
+            </Style>
+            <Point>
+                <coordinates>29.4515,40.84283,0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+        <name>Property TARLA</name>
+        <Placemark>
+            <name>TARLA</name>
+            <description>Property ID: 48941825</description>
+            <Style>
+                <LineStyle>
+                    <color>ff0000ff</color>
+                    <width>2</width>
+                </LineStyle>
+                <PolyStyle>
+                    <color>7d00ffff</color>
+                </PolyStyle>
+            </Style>
+            <Polygon><outerBoundaryIs><LinearRing><coordinates>29.46895,40.88267,0 29.46864,40.88287,0 29.46833,40.88273,0 29.46942,40.8817,0 29.47021,40.88241,0 29.4705,40.88286,0 29.47039,40.88286,0 29.4703,40.88297,0 29.47031,40.88301,0 29.47045,40.88304,0 29.47059,40.88312,0 29.47005,40.88334,0 29.46925,40.88273,0 29.46923,40.88275,0 29.46895,40.88267,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+        </Placemark>
+        <Placemark>
+            <name>Property Center</name>
+            <description>Property center point</description>
+            <Style>
+                <IconStyle>
+                    <color>ff00ff00</color>
+                    <scale>1.2</scale>
+                </IconStyle>
+            </Style>
+            <Point>
+                <coordinates>29.46895,40.88267,0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

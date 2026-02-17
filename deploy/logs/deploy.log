@@ -1,0 +1,8 @@
+[2025-11-18 15:50:59] CMD: "C:\Program Files\Git\bin\git.exe" reset --hard origin/main
+OUT:
+HEAD is now at 93172e5 şirketleri listele v7
+
+ERR:
+
+EXIT:0
+[2025-11-18 15:50:59] === Deploy OK (in-place) ===

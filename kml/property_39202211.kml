@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+        <name>Property ARSA</name>
+        <Placemark>
+            <name>ARSA</name>
+            <description>Property ID: 39202211</description>
+            <Style>
+                <LineStyle>
+                    <color>ff0000ff</color>
+                    <width>2</width>
+                </LineStyle>
+                <PolyStyle>
+                    <color>7d00ffff</color>
+                </PolyStyle>
+            </Style>
+            <Polygon><outerBoundaryIs><LinearRing><coordinates>29.28675,40.9247,0 29.28671,40.9247,0 29.28668,40.92468,0 29.28639,40.92449,0 29.28623,40.92438,0 29.28595,40.92419,0 29.28551,40.92388,0 29.28506,40.92358,0 29.28462,40.92328,0 29.28488,40.92266,0 29.28514,40.92215,0 29.28535,40.92173,0 29.28592,40.92201,0 29.28642,40.92225,0 29.28692,40.92249,0 29.28743,40.92273,0 29.28741,40.9228,0 29.2873,40.92287,0 29.28712,40.9235,0 29.28718,40.92358,0 29.28711,40.92381,0 29.28704,40.92384,0 29.28683,40.92439,0 29.28687,40.92446,0 29.2868,40.92467,0 29.28678,40.92469,0 29.28675,40.9247,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+        </Placemark>
+        <Placemark>
+            <name>Property Center</name>
+            <description>Property center point</description>
+            <Style>
+                <IconStyle>
+                    <color>ff00ff00</color>
+                    <scale>1.2</scale>
+                </IconStyle>
+            </Style>
+            <Point>
+                <coordinates>29.28675,40.9247,0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

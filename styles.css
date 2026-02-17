@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Video Arka Plan */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    width: 100%;
+    opacity: 0.85;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+}
+
+.login-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #00C1D4;
+    box-shadow: 0 0 10px rgba(0, 193, 212, 0.5);
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #00C1D4;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #007BFF;
+    box-shadow: 0 0 20px rgba(0, 193, 212, 0.7);
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .login-box {
+        padding: 20px;
+        width: 90%;
+    }
+}
+
+/* ===== BOTTOM SHEET COMPONENT ===== */
+#bottom-sheet {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    height: 60px !important;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%) !important;
+    border-top: 2px solid #007bff !important;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15) !important;
+    z-index: 99999 !important;
+    transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+    border-radius: 20px 20px 0 0 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+#bottom-sheet.open {
+    height: 90vh;
+}
+
+#bottom-sheet .handle {
+    flex-shrink: 0 !important;
+    height: 60px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%) !important;
+    border-radius: 20px 20px 0 0 !important;
+    transition: background 0.3s ease !important;
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    width: 100% !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+#bottom-sheet .handle:hover {
+    background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
+}
+
+#bottom-sheet .handle-icon {
+    font-size: 20px;
+    color: #ffffff;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block;
+}
+
+#bottom-sheet.open .handle-icon {
+    transform: rotate(180deg);
+}
+
+#bottom-sheet .content {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #ffffff;
+    padding: 0;
+}
+
+/* Scroll bar styling */
+#bottom-sheet .content::-webkit-scrollbar {
+    width: 8px;
+}
+
+#bottom-sheet .content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+#bottom-sheet .content::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    border-radius: 4px;
+}
+
+#bottom-sheet .content::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #0056b3 0%, #003d82 100%);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    #bottom-sheet {
+        height: 60px;
+    }
+    
+    #bottom-sheet.open {
+        height: 90vh;
+    }
+    
+    #bottom-sheet .handle {
+        height: 60px;
+    }
+}
+
+/* Tablet responsive */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #bottom-sheet.open {
+        height: 85vh;
+    }
+}
+
+/* ======================================= */
+/*   PROLEGAL BOTTOM SHEET — ONLY HANDLE   */
+/* ======================================= */
+
+#prolegal-bottom-sheet.pro-bs {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+
+    width: 120px !important;       /* sadece ok gözüksün */
+    height: 55px !important;       /* kapalıyken sadece handle */
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+
+    z-index: 999999 !important;
+    overflow: visible !important;  /* handle dışarı taşabilsin */
+    transition: all 0.35s ease !important;
+}
+
+/* Açık hali: içerik görünür */
+#prolegal-bottom-sheet.pro-bs.open {
+    width: 90% !important;
+    max-width: 500px !important;
+    height: 80vh !important;
+    background: #ffffff !important;
+    border-radius: 16px 16px 0 0 !important;
+    box-shadow: 0 -8px 25px rgba(0,0,0,0.25) !important;
+}
+
+/* Mavi ok handle */
+.pro-bs-handle {
+    width: 120px !important;
+    height: 55px !important;
+    background: linear-gradient(135deg, #007bff, #0056b3) !important;
+    border-radius: 14px 14px 14px 14px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    user-select: none;
+    margin: 0 auto !important;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.25) !important;
+}
+
+/* Ok ikonu */
+.pro-bs-icon {
+    font-size: 20px !important;
+    color: #fff !important;
+    transition: transform 0.35s ease !important;
+}
+
+#prolegal-bottom-sheet.pro-bs.open .pro-bs-icon {
+    transform: rotate(180deg) !important;
+}
+
+/* İçerik kapalıyken görünmesin */
+.pro-bs-content {
+    display: none !important;
+}
+
+/* Açıkken görünür olsun */
+#prolegal-bottom-sheet.pro-bs.open .pro-bs-content {
+    display: block !important;
+    padding: 18px !important;
+    overflow-y: auto !important;
+    height: calc(100% - 55px) !important;
+}

@@ -1,0 +1,10 @@
+# KML dosyaları için MIME type
+<Files "*.kml">
+    Header set Content-Type "application/vnd.google-earth.kml+xml"
+    Header set Access-Control-Allow-Origin "*"
+</Files>
+
+# CORS headers for Google Earth Web
+Header always set Access-Control-Allow-Origin "*"
+Header always set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+Header always set Access-Control-Allow-Headers "Content-Type"
