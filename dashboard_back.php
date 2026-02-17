@@ -1,4 +1,5 @@
 <?php
+session_name('mini_harita_session');
 session_start();
 
 // Eğer kullanıcı giriş yapmamışsa login sayfasına yönlendirmece

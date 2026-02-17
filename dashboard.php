@@ -1,4 +1,5 @@
 <?php
+session_name('mini_harita_session');
 session_start();
 
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
@@ -631,8 +632,8 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : 'Bilinmeyen k
                     </div>
                     <div class="header-label-container">
                         <h6 class="app-label mb-0" id="sub-title-h6-short">
-                            <span id="prolegalLogo" style="cursor: pointer; font-weight: 700; font-size: 16px;"
-                                title="Dark Mode Toggle">Mini Harita</span>
+                            <span id="prolegalLogo" style="cursor: pointer;"
+                                title="Dark Mode Toggle"></span>
                         </h6>
                     </div>
                 </div>

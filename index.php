@@ -1,4 +1,5 @@
 <?php
+session_name('mini_harita_session');
 session_start();
 
 $loggedIn    = isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true;

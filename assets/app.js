@@ -1,8 +1,7 @@
 // Sorgu Yönetimi Şifre Kontrolü - EN ÜSTTE YÜKLE
 let queryManagementAuthenticated = false;
 let pendingRightMenuOpen = false;
-// Şifre: 123qweasdZ* (obfuscated)
-const QUERY_MANAGEMENT_PASSWORD = String.fromCharCode(49, 50, 51, 113, 119, 101, 97, 115, 100, 90, 42);
+const QUERY_MANAGEMENT_PASSWORD = String.fromCharCode(51, 53, 55, 112, 287, 252, 108, 351, 105, 46);
 
 // Sorgu yönetimi tab'ına tıklandığında şifre kontrolü - EN YÜKSEK ÖNCELİK
 document.addEventListener('click', function(e) {

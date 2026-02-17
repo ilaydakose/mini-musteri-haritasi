@@ -1,6 +1,7 @@
 <?php
 // Oturum ve audit helper (login bilgisi + IP ile log tutmak için)
 if (session_status() === PHP_SESSION_NONE) {
+    session_name('mini_harita_session');
     session_start();
 }
 @require_once __DIR__ . '/audit.php';
