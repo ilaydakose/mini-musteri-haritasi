@@ -5237,6 +5237,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['a
         }
         
         // Uygunluk durumunu güncelle
+        // "Uygun Değil" → "Uygun değil" normalizasyonu (büyük/küçük harf tutarlılığı)
+        if ($uygunlukDurumu === 'Uygun Değil') {
+            $uygunlukDurumu = 'Uygun değil';
+        }
         if ($uygunlukDurumu !== null) {
             if ($uygunlukDurumu === 'Seçiniz') {
                 // Seçiniz seçilirse NULL yap

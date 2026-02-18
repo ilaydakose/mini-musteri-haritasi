@@ -1077,7 +1077,7 @@ window.addEventListener('SETMAP_FIELD', e => {
         // DİĞER DURUMLAR
         else if (tapu_durum === 'Uygun') {
             fillColor = "#004CFF"; // MAVİ
-        } else if (tapu_durum === 'Uygun değil') {
+        } else if (tapu_durum === 'Uygun değil' || tapu_durum === 'Uygun Değil') {
             fillColor = "#732982"; // MOR
         }
 

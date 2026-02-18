@@ -5746,7 +5746,7 @@ function handleUygunlukChange(event) {
     const basvuruSelect = row ? row.querySelector('.basvuru-select') : null;
 
     // Uygun veya Uygun değil seçildiğinde sorgu durumunu Sorgulandı yap
-    if (selectedValue === 'Uygun' || selectedValue === 'Uygun değil') {
+    if (selectedValue === 'Uygun' || selectedValue === 'Uygun değil' || selectedValue === 'Uygun Değil') {
         if (sorguSelect) {
             sorguSelect.value = 'Sorgulandı';
             console.log('✅ Sorgu durumu otomatik olarak "Sorgulandı" yapıldı');
@@ -6228,7 +6228,7 @@ function calculateStatusCounts(records) {
         // Uygunluk durumu
         if (record.uygunluk_durumu === 'Uygun') {
             counts.uygun++;
-        } else if (record.uygunluk_durumu === 'Uygun değil') {
+        } else if (record.uygunluk_durumu === 'Uygun değil' || record.uygunluk_durumu === 'Uygun Değil') {
             counts.uygunDegil++;
         }
         
