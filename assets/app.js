@@ -1,7 +1,7 @@
 // Sorgu Yönetimi Şifre Kontrolü - EN ÜSTTE YÜKLE
 let queryManagementAuthenticated = false;
 let pendingRightMenuOpen = false;
-const QUERY_MANAGEMENT_PASSWORD = String.fromCharCode(51, 53, 55, 112, 287, 252, 108, 351, 105, 46);
+const QUERY_MANAGEMENT_PASSWORD = String.fromCharCode(49, 48, 49, 48, 57, 56);
 
 // Sorgu yönetimi tab'ına tıklandığında şifre kontrolü - EN YÜKSEK ÖNCELİK
 document.addEventListener('click', function(e) {
